@@ -9,31 +9,9 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         ul {
+            width: 80%;
             display: grid;
-            grid-template-columns: 300px 300px 300px;
-            grid-template-areas: "header header header"
-                "menu content aside"
-                "menu footer footer";
-        }
-
-        li:nth-child(1) {
-            grid-area: header;
-        }
-
-        li:nth-child(2) {
-            grid-area: menu;
-        }
-
-        li:nth-child(3) {
-            grid-area: content;
-        }
-
-        li:nth-child(4) {
-            grid-area: aside;
-        }
-
-        li:nth-child(5) {
-            grid-area: footer;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         }
     </style>
 </head>
