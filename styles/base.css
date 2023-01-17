@@ -1,0 +1,417 @@
+/*Main Styles*/
+:root {
+    box-sizing: border-box;
+    font-size: 1rem;
+    --dark-blue: #0070BD;
+    --dark-blue-80: rgba(0, 112, 189, .8);
+    --light-blue: #29A7D9;
+    --orange: #E0AC33;
+    --white: #F2F2F2;
+    --white-70: rgba(242, 242, 242, .7);
+    --black: #0D0D0D;
+    --black-30: rgb(13, 13, 13, .3);
+    --black-80: rgb(13, 13, 13, .8);
+    --mid-grey: #585858;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    color: var(--dark-blue);
+}
+a:hover{
+    color: var(--orange);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: Oxygen, Verdana, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+body > section {
+    padding: 1em;
+}
+input[type=text], input[type=email]{
+    border: 2px solid var(--light-blue-blue);
+    border-radius: 5px;
+    cursor: text;
+    padding: .5em;
+}
+input[type=text]:focus, input[type=email]:focus{
+    outline: none;
+    border-color: var(--dark-blue);
+    box-shadow: 0px 0px 3px var(--dark-blue);
+}
+/*Classes*/
+.btn{
+    text-decoration: none;
+    background-color: var(--white);
+    border: 1px solid var(--dark-blue);
+    border-radius: 4px;
+    color: var(--dark-blue);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-shadow: none;
+}
+.btn:hover{
+    color: var(--orange);
+}
+.bi {
+    margin-left: .5em;
+}
+ul.card{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.card > li {
+    border: 1px solid var(--mid-grey);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--black-30);
+}
+.cta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin: 2re auto;
+    padding: 3em 2em;
+    text-shadow: 1px 1px 1px var(--mid-grey);
+}
+
+/*#mainHeader*/
+#mainHeader{
+    background-image: url("/images/boatOnRiver_hero.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+}
+#mainHeader img{
+    max-width: 100px;
+    margin-right: 20px;
+}
+#mainHeader h1 {
+    font-size: 3em;
+    text-shadow: 
+        -1px -1px 0px var(--dark-blue),
+        1px -1px 0px var(--dark-blue),
+        -1px 1px 0px var(--dark-blue),
+        1px 1px 0px var(--dark-blue);
+}
+#mainHeader p {
+    font-size: 1.3em;
+    padding: 1em;
+    background-color: var(--dark-blue-80);
+}
+
+/*Navigation*/
+#navWrapper {
+    background-color: var(--dark-blue);
+    padding: 5px;
+    border-bottom: 1px solid var(--white);
+    box-shadow: 0px 1px 5px var(--black);
+}
+#nav {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+#nav #logo{
+    max-width: 85px;
+}
+#nav #navToggle {
+    display: none;
+}
+#nav #navToggle ~ label {
+    color: var(--white);
+    font-size: 35px;
+}
+#nav #mainNav{
+    background-color: var(--light-blue);
+}
+#nav #mainNav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#nav #mainNav ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--white);
+    border-bottom: 1px solid var(--dark-blue);
+    transition: background-color .2s;
+}
+#nav #mainNav ul li a:hover{
+    background-color: var(--orange);
+}
+#nav #mainNav ul li:last-child a{
+    border: none;
+    color: var(--dark-blue);
+    transition: color .2s;
+}
+#nav #mainNav ul li:last-child a:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/*destinations*/
+#destinations article h1{
+    color: var(--dark-blue);
+    font-weight: bold;
+    font-size: 2.5em;
+}
+#destinations ul.card li{
+    padding: 1em;
+}
+#destinations ul.card li h2{
+    background-color: var(--white-70);
+    margin-bottom: 1em;
+    padding: 5px;
+    color: var(--dark-blue);
+}
+
+/*Newsletter*/
+#newsletter{
+    background-image: url("/images/bkg_newsletter.jpg");
+    background-position: bottom left;
+}
+#newsletter h1{
+    font-size: 2em;
+}
+#newsletter div label{
+    font-size: 1.1em;
+}
+#newsletter div input{
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--dark-blue);
+    border-right: none;
+}
+#newsletter div button{
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+    font-size: .8em;
+}
+
+/*Team*/
+#team h1{
+    color: var(--dark-blue);
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+#team p{
+    font-size: 1.2em;
+}
+#team ul{
+    list-style: none;
+    padding: 0;
+}
+#team ul li {
+    transition: transform .25s ease-in-out;
+}
+#team ul li:hover{
+    transform: scale(1.2);
+}
+#team figure{
+    margin: 0;
+    padding: 0;
+}
+#team figure img{
+    border-radius: 50%;
+    border: 5px solid var(--light-blue);
+}
+#team figure figcaption {
+    background-color: var(--white-70);
+    color: var(--dark-blue);
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+/*sustainable*/
+#sustainable{
+    background-image: url("/images/bkg_sustainable.jpg");
+    background-position: center left;
+}
+#sustainable h1{
+    font-size: 2em;
+}
+/*Values*/
+#values article h1 {
+    color: var(--dark-blue);
+    font-weight: bold;
+    font-size: 2.5em;
+}
+#values article p{
+    font-size: 1.2em;
+}
+#values ul li figure{
+    margin: 0;
+    padding: 0;
+}
+#values ul li figure img{
+    border-radius: 4px 0 0 4px;
+}
+#values ul li figure figcaption{
+    background-color: var(--white-70);
+    text-align: center;
+    font-size: 1.7em;
+    color: var(--dark-blue);
+    text-shadow: 1px 1px 1px var(--black-30);
+}
+#values ul li h2{
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+#values ul li p{
+    font-size: .8em;
+    padding: 15px;
+    margin:0
+}
+/*education*/
+#education{
+    background-image: url("/images/bkg_education.jpg");
+    background-position: center left;
+}
+#education h1{
+    font-size: 2em;
+}
+/*Gallery*/
+#gallery h1{
+    color: var(--dark-blue);
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+#gallery img{
+    cursor: pointer;
+}
+/*Footer*/
+#mainFooter {
+    color: var(--white);
+}
+#mainFooter h1{
+    color: var(--orange);
+}
+#mainFooter #formWrapper{
+    background-color: var(--dark-blue);
+    padding: 1em;
+    margin: 0;
+}
+#mainFooter form {
+    max-width: 350px;
+    margin: 0 auto;
+}
+#contactForm label{
+    display: block;
+    margin-bottom: 5px;
+}
+#contactForm div{
+    margin-bottom: 20px;
+}
+#contactForm input, #contactForm textarea {
+    border-radius: 5px;
+    border: 2px solid var(--light-blue);
+    width: 100%;
+}
+#contactForm textarea {
+    height: 10em;
+    resize: none;
+}
+#contactForm input:focus, #contactForm textarea:focus {
+    border-color: var(--orange);
+    outline: none;
+}
+#contactForm div.radio label{
+    display: inline-block;
+    margin-right: 10px;;
+}
+#contactForm div.radio input{
+    width: auto;
+}
+#contactForm button{
+    display: flex;
+    margin-left: auto;
+}
+#mainFooter #contactWrapper{
+    background-color: var(--light-blue);
+    padding: 1em;
+}
+#mainFooter #contact address{
+    margin-top: 10px;
+    font-size: .8em;
+}
+#mainFooter #contact iframe {
+    display: none;
+}
+#mainFooter #copyright{
+    background-color: var(--orange);
+    text-align: center;
+    font-size: .5em;
+    margin: 0;
+    padding: 1em;
+}
+
+/*Media queries*/
+@media screen and (min-width: 700px){
+    /*#mainHeader in 700px Media Query*/
+    #mainHeader {
+        text-align: left;
+    }
+    #mainHeader h1{
+        font-size: 3.5em;
+    }
+    /*#navigation in 700px Media Query*/
+    #nav #navToggle ~ label {
+        display: none;
+    }
+    #nav #mainNav{
+        background-color: transparent;
+    }
+    #nav #mainNav ul li a{
+        font-size: 1em;
+        border-bottom: none;
+    }
+    /*#destinations and #values in 700px media query*/
+    #destinations article, #values article {
+        margin-bottom: 1em !important;
+    }
+    #destinations article > *, #values article > *{
+        padding: .5em; 
+    }
+    #destinations article p, #values article p {
+        margin: 0;
+        border-left: 1px solid var(--dark-blue);
+    }
+    /* #gallery in 700px media query*/
+    #gallery h1 {
+        font-size: 2.5em;
+    }
+    /* #mainFooter in 700px media query*/
+    #mainFooter #contact address{
+        font-size: 1.3em;
+    }
+    #mainFooter #contact iframe{
+        display: block;
+        margin: 40px auto;
+        width: 90%;
+        height: 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #nav #mainNav ul li a {
+        font-size: 1.3em;
+    }
+}
