@@ -1,0 +1,19 @@
+#wrapper {
+    width: 960px;
+    margin: 50px auto 0;
+    padding: 20px;
+    background-color: chocolate;
+    border: 3px solid brown;
+    font-size: 1.5em
+}
+#div1 {
+    background-color: aquamarine;
+    border: 3px solid red;
+    border-color: darkgreen;
+    padding: 20px;
+}
+#div2 {
+    background-color: lightyellow;
+    border: 3px solid blue;
+    padding: 20px;
+}
