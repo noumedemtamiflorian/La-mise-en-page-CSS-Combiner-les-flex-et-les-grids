@@ -1,0 +1,16 @@
+ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    width: 980px;
+    background-color: cadetblue;
+    border:5px solid darkgoldenrod;
+    color: white;
+}
+
+li {
+    font-size: 1.3em;
+    background-color: brown;
+    padding: 10px;
+    border: 1px solid burlywood;
+}
