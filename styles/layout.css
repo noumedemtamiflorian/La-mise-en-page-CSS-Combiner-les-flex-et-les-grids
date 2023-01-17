@@ -1,0 +1,17 @@
+@media screen and (min-width:700px) {
+    #mainHeader {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    #mainHeader img {
+        grid-row: 1/-1;
+        align-self: center;
+        max-width: inherit;
+    }
+
+    #mainHeader a {
+        justify-self: center;
+    }
+}
